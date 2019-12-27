@@ -7,7 +7,7 @@ import {ModalService} from '../modal.service';
     <div class="jw-modal">
       <div class="jw-modal-body">
         <ng-content></ng-content>
-        <!--<router-outlet></router-outlet>-->
+        <router-outlet></router-outlet>
       </div>
     </div>
     <div class="jw-modal-background"></div>

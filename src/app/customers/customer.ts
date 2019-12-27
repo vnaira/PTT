@@ -7,5 +7,4 @@ export class Customer {
   fulfillment: number;
   amountOfProduct: number;
   SKU: string;
-
 }

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="col-md-12">
+
+    <table class="table table-bordered table-hover table-responsive">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Amount of Product</th>
+        <!--<th scope="col">Order Volume</th>-->
+        <th scope="col">SKU</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor = "let order of ordersList">
+        <td>{{order.id}}</td>
+        <td>{{order.name}}</td>
+        <td>{{order.amountOfProduct | currency}}</td>
+        <td>{{order.SKU}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <button (click)="closeModal('custom-modal-1');">Cancel</button>
+</div>
+

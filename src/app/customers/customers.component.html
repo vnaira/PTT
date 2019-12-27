@@ -2,9 +2,9 @@
   <section>
     <div class="row">
       <div class="col-md-12 text-right">
-      <button class="btn btn-primary" (click)="openModal('custom-modal-1')">Import Orders</button>
-      <button class="btn" disabled="">NA1</button>
-      <button class="btn" disabled="">NA2</button>
+        <button class="btn btn-primary" (click)="openModal('custom-modal-1')">Import Orders</button>
+        <button class="btn" disabled="">NA1</button>
+        <button class="btn" disabled="">NA2</button>
       </div>
     </div>
     <table class="table table-bordered table-hover table-responsive">
@@ -21,7 +21,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor = "let customerItem of customers">
+      <tr *ngFor="let customerItem of customers">
         <td>{{customerItem.id}}</td>
         <td>{{customerItem.name}}</td>
         <td>{{customerItem.creationDate | date}}</td>
@@ -38,7 +38,24 @@
 </div>
 
 <app-modal id="custom-modal-1">
-  <h1> Modal!</h1>
-   <input type="text" [(ngModel)]="bodyText" />
-  <button (click)="closeModal('custom-modal-1');">Close</button>
+  <div class="container">
+    <div class="card-container">
+      <ol class="inline">
+        <li class="list-inline-item">
+          1. Find Order
+        </li>
+        <li class="list-inline-item">
+          2. Prepare Products
+        </li>
+        <li class="list-inline-item">
+          3. Confirm Order
+        </li>
+      </ol>
+    </div>
+    <div class="card-container">
+      <div class="col-md-12">
+        <input type="search" class="rounded">
+      </div>
+    </div>
+  </div>
 </app-modal>

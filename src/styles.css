@@ -39,4 +39,12 @@ body.jw-modal-open {
 table {
   margin: 20px 0 0;
 }
-tr td{ text-align: center}
+
+tr td {
+  text-align: center
+}
+
+.inline li {
+  display: inline-block;
+  width: 30%
+}
